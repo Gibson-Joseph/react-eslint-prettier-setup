@@ -26,7 +26,8 @@
     "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet",
     "lint:fix": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
     "lint:strict": "eslint '*/**/*.{js,jsx,ts,tsx}'",
-    "prettier": "prettier --write src/**/*.{js,jsx,json,ts,tsx,scss,css,md}"
+    "prettier": "prettier --write src/**/*.{js,jsx,json,ts,tsx,scss,css,md}",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -57,6 +58,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "husky": "^8.0.0"
   }
 }
