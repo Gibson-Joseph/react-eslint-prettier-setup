@@ -11,6 +11,7 @@
     "babel-preset-react-app": "^10.0.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
@@ -27,6 +28,11 @@
     "lint:fix": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
     "lint:strict": "eslint '*/**/*.{js,jsx,ts,tsx}'",
     "prettier": "prettier --write src/**/*.{js,jsx,json,ts,tsx,scss,css,md}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run build"
+    }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,ts,tsx,scss,css,md}": [
