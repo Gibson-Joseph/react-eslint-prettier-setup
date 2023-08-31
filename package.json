@@ -29,15 +29,13 @@
     "lint:strict": "eslint '*/**/*.{js,jsx,ts,tsx}'",
     "prettier": "prettier --write src/**/*.{js,jsx,json,ts,tsx,scss,css,md}"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write", "git add"]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run build"
+      "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,ts,tsx,scss,css,md}": [
-      "prettier --write"
-    ]
   },
   "eslintConfig": {
     "extends": [
