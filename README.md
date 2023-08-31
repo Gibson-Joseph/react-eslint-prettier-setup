@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Scripts
+
+```
+npm run lint
+
+// Run eslint and fix all fixable issues
+npm run lint:fix
+```
+
+To run `eslint` in strict mode:
+
+```
+npm run lint:strict
+```
+
+If not using the [Prettier](https://prettier.io/) plugin for Visual Studio Code,
+you can still check and auto-fix files from the command line:
+
+```
+npm run prettier
+```
